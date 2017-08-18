@@ -12,6 +12,12 @@
     font-family: "castor";
     src: url(castorgate.ttf);
   }
+  body{
+    background-color: seashell;
+  }
+  p.webname{
+    word-spacing: 18px;
+  }
   hr {
     display: block;
     height: 0px;
@@ -20,11 +26,17 @@
     margin: 1em 0;
     padding: 0;
   }
+  a.link:hover{
+    color: LightGray;
+  }
+  a.last:hover{
+    color: LightGray;
+  }
   a.link::after{
     padding-left: 20px;
     content: '\00B7';
+    color: black;
   }
-
   .topbar{
 
   }
@@ -32,7 +44,7 @@
       font-family: castor;
       float: none;
       vertical-align: top;
-      background-color: white;
+      background-color: seashell;
       text-align: center;
     }
     .navbar a {
@@ -42,13 +54,18 @@
       font-size: 25px;
       padding-right: 20px;
     }
+    .webname{
+      font-family: castor;
+      font-size: 20px;
+      padding-bottom: 20px;
+
+    }
     .ToriLogo{
       font-family: steafont;
-      font-size: 80px;
+      font-size: 75px;
       margin:auto;
       width: 200px;
       text-align: center;
-      padding-top: 20px;
       color: black;
     }
     .Title{
@@ -91,13 +108,15 @@
   <div class="content">
     <div class="topbar">
       <div class="Title">
-        <h1> <a class="ToriLogo" href="index.html">Tori Penak</a></h1>
+        <h1> <a class="ToriLogo" href="index.html">Miss Penak</a></h1>
+        <p class="webname">T O R I P E N A K . C A</p>
       </div
       <div class="divide"><hr /></div>
       <div class="navbar">
         <a class="link" href="index.html">HOME</a>
         <a class="link" href="index.html">ABOUT</a>
-        <a class="link" href="toriExperience.html">GALLERY</a>
+        <a class="link" href="index.html">CLASS</a>
+        <a class="link" href="index.html">GALLERY</a>
         <a class="last" href="contact.html">CONTACT</a>
       </div>
       <div class="divide"><hr /></div>
