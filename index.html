@@ -8,8 +8,28 @@
     font-family: "steafont";
     src: url(steafont.otf);
   }
+  @font-face {
+    font-family: "castor";
+    src: url(castorgate.ttf);
+  }
+  hr {
+    display: block;
+    height: 0px;
+    border: 0;
+    border-top: 2px solid black;
+    margin: 1em 0;
+    padding: 0;
+  }
+  a.link::after{
+    padding-left: 20px;
+    content: '\00B7';
+  }
+
+  .topbar{
+
+  }
   .navbar {
-      font-family: steafont;
+      font-family: castor;
       float: none;
       vertical-align: top;
       background-color: white;
@@ -17,19 +37,26 @@
     }
     .navbar a {
       display: inline-block;
-      color: hotpink;
-      padding: 14px 16px;
+      color: black;
       text-decoration: none;
       font-size: 25px;
+      padding-right: 20px;
     }
     .ToriLogo{
       font-family: steafont;
       font-size: 80px;
       margin:auto;
-      width: 500px;
+      width: 200px;
       text-align: center;
       padding-top: 20px;
-      color: hotpink;
+      color: black;
+    }
+    .Title{
+      text-align: center;
+    }
+    .ToriLogo:link{
+      text-align: center;
+      text-decoration: none;
     }
     .Logo{
       display: block;
@@ -37,6 +64,9 @@
       width: 200px;
       text-align: center;
       padding-top: 20px;
+    }
+    .divide{
+      border-color: whitesmoke;
     }
     .row2{
       margin:auto;
@@ -59,15 +89,18 @@
 
 <body>
   <div class="content">
-    <div class="Title">
-      <h1 class="ToriLogo">Tori Penak</h1>
-      <h1> <a class="Logo" href="index.html"><img src="ToriLogo.png" alt="Tori Penak"></a></h1>
-    </div>
-    <div class="navbar">
-      <a href="index.html">Resume</a>
-      <a href="toriExperience.html">Experience</a>
-      <a href="index.html">LinkedIn</a>
-      <a href="contact.html">Contact</a>
+    <div class="topbar">
+      <div class="Title">
+        <h1> <a class="ToriLogo" href="index.html">Tori Penak</a></h1>
+      </div
+      <div class="divide"><hr /></div>
+      <div class="navbar">
+        <a class="link" href="index.html">HOME</a>
+        <a class="link" href="index.html">ABOUT</a>
+        <a class="link" href="toriExperience.html">GALLERY</a>
+        <a class="last" href="contact.html">CONTACT</a>
+      </div>
+      <div class="divide"><hr /></div>
     </div>
     <div class="mainbar">
       <p>This is the main page. <br>not complete</p>
