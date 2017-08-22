@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Tori's Website </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/js/my.js"></script>
   <style>
   @font-face {
     font-family: "steafont";
@@ -38,6 +40,13 @@
     color: black;
   }
   .topbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin:auto;
+    border-bottom: 2px solid black;
+    background-color: seashell;
 
   }
   .navbar {
@@ -46,6 +55,7 @@
       vertical-align: top;
       background-color: seashell;
       text-align: center;
+      padding-bottom: 20px;
     }
     .navbar a {
       display: inline-block;
@@ -82,19 +92,12 @@
       text-align: center;
       padding-top: 20px;
     }
-    .divide{
-      border-color: whitesmoke;
-    }
     .row2{
       margin:auto;
     }
     .content{
       padding-top: 1px;
       padding-bottom: 0.5px;
-
-      background-image: url(background.jpg);
-      background-repeat: repeat-x;
-      background-position: top left;
     }
     .mainbar{
       text-align: center;
@@ -110,8 +113,7 @@
       <div class="Title">
         <h1> <a class="ToriLogo" href="index.html">Miss Penak</a></h1>
         <p class="webname">T O R I P E N A K . C A</p>
-      </div
-      <div class="divide"><hr /></div>
+      </div>
       <div class="navbar">
         <a class="link" href="index.html">HOME</a>
         <a class="link" href="index.html">ABOUT</a>
@@ -119,10 +121,11 @@
         <a class="link" href="index.html">GALLERY</a>
         <a class="last" href="contact.html">CONTACT</a>
       </div>
-      <div class="divide"><hr /></div>
     </div>
     <div class="mainbar">
       <p>This is the main page. <br>not complete</p>
+      <img src="background.jpg" alt="">
+      <img src="background.jpg" alt="">
 
     </div>
   </div>
