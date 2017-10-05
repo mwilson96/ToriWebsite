@@ -39,7 +39,7 @@ a.link::after{
   margin:auto;
   border-bottom: 2px solid black;
   background-color: seashell;
-
+  height: 275px;
 }
 .navbar {
     font-family: castor;
@@ -92,5 +92,19 @@ a.link::after{
     padding-bottom: 0.5px;
   }
   .mainbar{
-    text-align: center;
+    display: inline-block;
+    margin:275px;
+  }
+  .mainbar p{
+    margin: 40px;
+  }
+  .leftbar{
+    float: left;
+    height: 500px;
+    width: 60%;
+  }
+  .rightbar{
+    float:left;
+    height: 500px;
+    width: 40%;
   }
