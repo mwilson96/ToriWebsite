@@ -31,6 +31,86 @@ a.link::after{
   content: '\00B7';
   color: black;
 }
+/***********SCROLL/DROPDOWN***********/
+div.webname{
+  font-size: 150%;
+  word-spacing: 18px;
+}
+.dropdown{
+  background-color: seashell;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  top: 0px;
+  border-bottom: black solid 2px;
+
+
+}
+.dropdown a{
+  display: inline-block;
+  font-family: castor;
+  color: black;
+  text-decoration: none;
+  font-size: 0px;
+  padding-right: 20px;
+}
+.smallNav {
+  display: block;
+  text-align: center;
+}
+
+.fontIncrease a {/*when bars are clicked, smallNav is unhidden*/
+  font-size: 150%;
+}
+.fontDecrease a {/*when bars are clicked, smallNav is unhidden*/
+  font-size: 0%;
+}
+
+.dropbtn{
+  margin-left: 45px;
+  margin-top: 0px;
+  position: fixed;
+}
+.bar1, .bar2, .bar3{
+  display: block;
+  width: 60px;
+  height: 8px;
+  margin-bottom: 10px;
+  background-color: black;
+  transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 8px) ;
+    transform: rotate(-45deg) translate(-9px, 8px) ;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-10px, 20px) ;
+    transform: rotate(45deg) translate(-15px, -15px) ;
+}
+
+/*removes menu button and makes links visible once screen size can't fit everything*/
+@media screen and (max-width: 800px) {
+  .bar1, .bar2, .bar3{
+    opacity: 0;
+  }
+  .dropdown a{
+    font-size: 120%;
+  }
+}
+.bar1, .bar2, .bar3, .dropdown a, .dropbtn{
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+}
+/***********DROPDOWN END***********/
+
+
 .topbar{/*contains entire navigational bar*/
   position: fixed;
   top: 0;
@@ -110,7 +190,7 @@ a.link::after{
     height: 500px;
     width: 40%;
   }
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 400px) {
     .leftbar {
         width:1000px;
         clear: both;
