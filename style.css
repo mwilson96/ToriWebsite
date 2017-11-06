@@ -7,7 +7,7 @@
   src: url(./fonts/castorgate.ttf);
 }
 body{
-  background-color: seashell;
+  background-color: lavenderblush;
 }
 p.webname{
   word-spacing: 18px;
@@ -37,7 +37,7 @@ div.webname{
   word-spacing: 18px;
 }
 .dropdown{
-  background-color: seashell;
+  background-color: lavenderblush;
   text-align: center;
   width: 100%;
   position: fixed;
@@ -45,10 +45,10 @@ div.webname{
   padding-bottom: 50px;
   top: 0px;
   border-bottom: black solid 2px;
-
-
 }
+
 .dropdown a{
+  width: 20%
   display: inline-block;
   font-family: castor;
   color: black;
@@ -57,20 +57,13 @@ div.webname{
   padding-right: 20px;
 }
 .smallNav {
-  display: block;
+  height: 500px;
+  display: inline-block;
   text-align: center;
 }
-
-.fontIncrease a {/*when bars are clicked, smallNav is unhidden*/
-  font-size: 150%;
-}
-.fontDecrease a {/*when bars are clicked, smallNav is unhidden*/
-  font-size: 0%;
-}
-
 .dropbtn{
   margin-left: 45px;
-  margin-top: 0px;
+  margin-top: 17px;
   position: fixed;
 }
 .bar1, .bar2, .bar3{
@@ -80,6 +73,14 @@ div.webname{
   margin-bottom: 10px;
   background-color: black;
   transition: 0.4s;
+}
+
+/*Following called from the my.js file*/
+.fontIncrease a {/*when bars are clicked, smallNav is unhidden*/
+  font-size: 150%;
+}
+.fontDecrease a {/*when bars are clicked, smallNav is unhidden*/
+  font-size: 0%;
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 8px) ;
@@ -112,21 +113,21 @@ div.webname{
 
 
 .topbar{/*contains entire navigational bar*/
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   text-align: center;
   margin:auto;
   padding-bottom: 20px;
   border-bottom: 2px solid black;
-  background-color: seashell;
+  background-color: lavenderblush;
   height: 275px;
 }
 .navbar {/*contains links in navigational bar*/
     font-family: castor;
     float: none;
     vertical-align: top;
-    background-color: seashell;
+    background-color: lavenderblush;
     text-align: center;
     width: 100%;
   }
