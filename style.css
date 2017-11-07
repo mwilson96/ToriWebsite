@@ -23,10 +23,10 @@ hr {
 a.link:hover{
   color: LightGray;
 }
-a.last:hover{
+/*a.last:hover{
   color: LightGray;
-}
-a.link::after{
+}*/
+a.link:not(:last-child)::after{
   padding-left: 20px;
   content: '\00B7';
   color: black;
@@ -57,9 +57,12 @@ div.webname{
   padding-right: 20px;
 }
 .smallNav {
-  height: 500px;
+  height: 100px;
   display: inline-block;
   text-align: center;
+}
+.smallNav a {
+  height: 400px;
 }
 .dropbtn{
   margin-left: 45px;
